@@ -10,11 +10,11 @@ namespace LINQ_Queries {
     private IEnumerable<string> _filteredFruit;
     internal FluentSyntax(string[] inputArray) {
       _fruits = inputArray;
-      FilterUsingLinq("a").WriteResult();
+      FilterUsingFluentSyntax("a").WriteResult();
       OrderByNaturalOrdering();
       OtherOperator();
     }
-    private IEnumerable<string> FilterUsingLinq(string word) {
+    private IEnumerable<string> FilterUsingFluentSyntax(string word) {
       _filteredFruit = _fruits
         .Where(n => n.Contains(word))
         .OrderBy(n => n.Length)

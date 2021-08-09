@@ -15,6 +15,7 @@ namespace LINQ_Queries {
       };
       GettingStarted started = new GettingStarted(_fruits);
       FluentSyntax fluent = new FluentSyntax(_fruits);
+      QueryExpressions expression = new QueryExpressions(_fruits);
       Console.ReadKey();
     }
   }
