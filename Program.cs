@@ -14,6 +14,7 @@ namespace LINQ_Queries {
         "pear", "orange", "banana", "rambutan"
       };
       GettingStarted started = new GettingStarted(_fruits);
+      FluentSyntax fluent = new FluentSyntax(_fruits);
       Console.ReadKey();
     }
   }

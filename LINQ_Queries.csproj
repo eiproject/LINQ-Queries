@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="FluentSyntax.cs" />
     <Compile Include="GettingStarted.cs" />
+    <Compile Include="LinqQuery.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

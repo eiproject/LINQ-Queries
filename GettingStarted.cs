@@ -11,13 +11,11 @@ namespace LINQ_Queries {
 
     internal GettingStarted(string[] inputArray) {
       _fruits = inputArray;
-      _filteredFruit = FilterByLengthUsingLINQ(6);
-      WriteResult(_filteredFruit);
-      _filteredFruit = FilterByLengthManual(6);
-      WriteResult(_filteredFruit);
+      FilterByLengthUsingLinq(6).WriteResult();
+      FilterByLengthManual(6).WriteResult();
     }
 
-    private IEnumerable<string> FilterByLengthUsingLINQ(int length) {
+    private IEnumerable<string> FilterByLengthUsingLinq(int length) {
       return _fruits.Where(n => n.Length >= length);
     }
 
@@ -27,11 +25,5 @@ namespace LINQ_Queries {
              select n;
     }
 
-    private void WriteResult(dynamic results) {
-      foreach (string result in results) {
-        Console.WriteLine(result);
-      }
-      Console.WriteLine("");
-    }
   }
 }
