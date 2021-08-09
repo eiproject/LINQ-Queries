@@ -43,9 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FluentSyntax.cs" />
-    <Compile Include="GettingStarted.cs" />
-    <Compile Include="LinqQuery.cs" />
+    <Compile Include="SubChapter\FluentSyntax.cs" />
+    <Compile Include="SubChapter\GettingStarted.cs" />
+    <Compile Include="Manager\ResultManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
