@@ -16,6 +16,15 @@ namespace LINQ_Queries {
       code++;
     }
 
+    public static void WriteResult(this List<string> inputs) {
+      Console.Write(code.ChangeNumberingTo2DigitFormatted() + " ");
+      foreach (string input in inputs) {
+        Console.Write(input + " ");
+      }
+      Console.WriteLine();
+      code++;
+    }
+
     public static void WriteResult(this IEnumerable<int> inputs) {
       Console.Write(code.ChangeNumberingTo2DigitFormatted() + " ");
       foreach (int input in inputs) {

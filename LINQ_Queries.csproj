@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SubChapter\DefferedEecution.cs" />
     <Compile Include="SubChapter\FluentSyntax.cs" />
     <Compile Include="SubChapter\GettingStarted.cs" />
     <Compile Include="Manager\ResultManager.cs" />
